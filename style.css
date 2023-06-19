@@ -1,4 +1,5 @@
-body {
+/* declines the style (css) for the body of the website (index.html) */
+.body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +10,7 @@ body {
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     font-size: 120%;
   }
-  
+  /* declines the style (css) for the card aka the box in the middle of the website (index.html) */
   .card {
     background: #ffffffd0;
     align-items: center;
@@ -20,13 +21,13 @@ body {
     max-width: 420px;
     margin: 1em;
   }
-  
+  /* declines the style (css) for the search bar of the website (index.html) */
   .search {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+  /* declines the style (css) for the search button on the website (index.html) */
   button {
     margin: 0.5em;
     border-radius: 50%;
@@ -39,7 +40,7 @@ body {
     cursor: pointer;
     transition: 0.2s ease-in-out;
   }
-  
+  /* declines the style (css) for the search bar input of the website (index.html) */
   input.search-bar {
     border: none;
     outline: none;
@@ -51,36 +52,31 @@ body {
     font-size: 105%;
     width: calc(100% - 100px);
   }
-  
+  /* declines the style (css) for the hover button on the website (index.html) */
   button:hover {
     background: #7c7c7c6b;
   }
-  
+  /* declines the style (css) for the shown temperature of the website (index.html) */
   h1.temp {
     align-items: center;
     margin: 0;
     margin-bottom: 0.4em;
   }
-  
+
   .flex {
     align-items: center;
     display: flex;
     align-items: center;
   }
-  
-  .description {
-    align-items: center;
-    text-transform: capitalize;
-    margin-left: 8px;
-  }
-  
+
+  /* declines the style (css) for the loading weather which isnt showen on the website (index.html) though */
   .weather.loading {
     align-items: center;
     visibility: hidden;
     max-height: 20px;
     position: relative;
   }
-  
+  /* declines the style (css) for the loading weather which isnt showen on the website (index.html) though */
   .weather.loading:after {
     align-items: center;
     visibility: visible;
