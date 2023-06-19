@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
-  
+  <!-- fetching css and html details + set the website icon and titel -->
 <head>
   <title>Ihr Wetter</title>
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAA9/8AAAAAAPrVrAD/RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERExETMREREzETMREzERERMxEzERMxERETERMzETMRERMxERMRExERETMREzETMRERExERMRExEiIiIiIiIiISIRESIREiEhEhEREREREQESIREREREiEBEiERERIiEQERIiIiIRERAREREREAERABERERERAAABERERERERERH3PwAAM58AAJnPAADcZwAAz3cAAOczAAD3uwAAAAEAADzlAAC//QAAn/IAAM/GAADgPgAA/5wAAP/BAAD//wAA" rel="icon" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link href="style.css" rel="stylesheet">
 </head>
-
+<!-- fetching the fonts and confirm the titel-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +25,7 @@
 
 <body>
   <div class="card">
+    <!-- place the searchbar and search input into correct position and make it work-->
     <div class="search">
       <input type="text" class="search-bar" placeholder="Search">
       <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
@@ -35,17 +35,22 @@
           </path>
         </svg></button>
     </div>
+    </div><!-- set the default city (in this case Denver)-->
     <div class="weather loading">
-      <h2 class="city">Das Wetter in Denver</h2>
+      <h2 class="city">Denver</h2>
       <h1 class="temp">51°C</h1>
       <div class="flex">
         <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-        <div class="description"></div>
+        <div class="description">D:</div>
       </div>
+      <!-- show (echo) the default infos for denver if there is nothing set already by script.js-->
       <div class="humidity">Feuchtigkeit: 60%</div>
       <div class="wind">Wind Geschwindigkeit: 6.2 km/h</div>
+      <div class="sunrise"></div>
+      <div class="sunset"></div>
     </div>
   </div>
+
 </body>
 
 </html>
